@@ -1,0 +1,1317 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	width: 100%
+	font-size: 16px
+	font-family: $play
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+	overflow-x: hidden
+
+body
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	overflow-x: hidden
+	opacity: 1
+	background: rgb(255, 255, 255)
+	display: block
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+a
+	text-decoration: none
+	cursor: auto
+	color: #000
+	outline: none
+	&:hover
+		text-decoration: none
+		color: #000
+		outline: none
+
+h1
+	font-weight: bold
+
+h1, h2, h3
+	font-family: $jura
+	text-align: center
+	color: #fff
+	background: $accent
+	padding: 7px 0
+
+.bath_title, .bath_title-description
+	font-family: 'RalewayBlack', sans-serif
+	background: none
+	text-align: center
+	text-transform: uppercase
+	margin: 0
+	padding: 0
+
+.bath_title
+	color: #000
+	line-height: 50.26px
+	font-size: 30px
+	margin: 45px 0
+	position: relative
+	span
+		color: $title-accent
+	&:before
+		content: ''
+		position: absolute
+		width: 300px
+		height: 3px
+		background: linear-gradient(to right,#000 0,#000 50%,#1b4589 50%,#1b4589 100%)
+		right: 0
+		left: 0
+		bottom: 0
+		margin: 0 auto
+
+.bath_title-description
+	font-family: 'ArialRegular', sans-serif
+	text-transform: none
+
+.page_title
+	color: #000
+	line-height: 50.26px
+	font-size: 50px
+	margin: 45px 0 60px
+	span
+		color: $button
+
+.fa
+	font-family: 'fontawesome', sans-serif
+
+header
+	display: block
+
+.head
+	margin-bottom: 36px
+
+.wrap
+	max-width: 1220px
+	margin: 0 auto
+	position: relative
+
+.head__container
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: space-between
+	margin-top: 30px
+
+.head__left,
+.logo,
+.head__right
+	display: flex
+	flex-direction: column
+	flex-wrap: wrap
+	margin-top: 10px
+
+.head__left
+	margin: auto 0
+	.head__master-call
+		padding: 0 17px 0 52px
+		position: relative
+		margin-bottom: 10px
+		background-color: #53abc1
+		line-height: 38px
+		color: #fff
+		width: 80%
+		&:before
+			content: ''
+			position: absolute
+			top: 50%
+			left: 15px
+			width: 25px
+			height: 25px
+			margin-top: -13px
+			background: url("../img/tooling.png") no-repeat
+			-webkit-background-size: 100%
+			background-size: 100%
+		span
+			border-bottom: 2px dotted rgba(255, 255, 255, .5)
+			&:hover
+				border-bottom: 2px dotted transparent
+		&:hover
+			color: #fff
+	.head__slogan
+		line-height: 38px
+		padding: 0 20px
+		color: #fff
+		background-color: #474747
+
+.logo
+	text-align: center
+	margin: 0 auto
+	.logo__link
+		text-transform: uppercase
+		font-size: 2.25rem
+		color: rgb(0, 0, 0)
+	.head__address
+		font-weight: bold
+		font-style: italic
+		font-size: 1.1rem
+		span
+			border-bottom: 2px dotted rgba(0, 0, 0, .3)
+		&:before
+			content: ''
+			position: absolute
+			width: 15px
+			height: 18px
+			margin-left: -17px
+			margin-top: 4px
+			background: url("../img/marker.png") no-repeat
+			background-size: 80%
+
+.head__right
+	.head__phone-container
+		display: flex
+		flex-direction: column
+		flex-wrap: wrap
+		align-items: flex-end
+		line-height: 30px
+		.head__phone
+			font-family: $jura
+			font-size: 1.4875rem
+	.head__phone-call
+		background: #00ccff
+		-webkit-border-radius: 7px
+		-moz-border-radius: 7px
+		border-radius: 7px
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		padding: 10px 7px
+		p
+			font-size: 12px
+			max-width: 105px
+			text-align: center
+			margin: 0
+			line-height: 15px
+		input
+			border: none
+			border-radius: 5px
+			max-height: 40px
+			padding: 10px 5px
+			margin: 0 5px
+		a
+			margin: auto
+			button
+				background: #FF0000
+				border: none
+				font-size: 12px
+				-webkit-border-radius: 5px
+				-moz-border-radius: 5px
+				border-radius: 5px
+				color: #fff
+				text-decoration: underline
+				border-bottom: 2px solid #B80202
+				transition: all .3s ease
+				padding: 8.5px 5px
+				cursor: pointer
+				&:hover
+					background: #b40000
+			.fa
+				color: #1D1D1D
+				font-size: 15px
+				margin-right: 5px
+
+
+/********Меню******/
+.menu
+	margin-bottom: 34px
+	padding: 3px 0 3px
+	border: 1px solid #474747
+	border-left: 0
+	border-right: 0
+	.wrap
+		.menu__list
+			display: flex
+			justify-content: space-around
+			flex-direction: row
+			padding: 0
+			margin: 0
+			list-style: none
+			color: #242424
+			font-size: 1.5625rem
+			text-transform: uppercase
+			.menu__item
+				flex: 1 0 auto
+				text-align: center
+				position: relative
+				border-right: 1px solid #474747
+				&:hover ul
+					visibility: visible
+					opacity: 1
+					display: block
+				.menu__link
+					line-height: 42px
+					&:hover
+						text-decoration: underline
+
+.menu__list
+	li
+		ul
+			position: absolute
+			display: flex
+			flex-direction: column
+			top: 40px
+			left: 0
+			z-index: 500
+			padding: 24px 0 20px 0
+			height: auto
+			width: 1000px
+			//background: transparent
+			list-style: none
+			visibility: hidden
+			opacity: 0
+			column-count: 3
+			-webkit-column-count: 3
+			-moz-column-count: 3
+			margin-top: 7px
+			background: #53abc1!important
+			li
+				text-align: left
+				padding: 10px 20px
+				font-size: 1rem
+				text-transform: none
+				background: #53abc1
+				line-height: 20px
+				a
+					color: #fff
+					&:hover
+						text-decoration: underline
+
+
+header.fixed
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 10
+	background: #fff
+	box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.3)
+	-webkit-box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.3)
+	-moz-box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.3)
+
+header
+	.door_menu
+		margin-bottom: 0
+
+/******Главный экран********/
+.content
+	display: flex
+	flex-direction: column
+	.bath_main
+		background: url("../img/bg.jpg") no-repeat center
+			size: cover
+		position: relative
+		.wrap
+			z-index: 2
+			padding: 155px 83px 300px 83px
+			box-sizing: border-box
+			display: flex
+			flex-direction: column
+			h1
+				font-size: 46px
+				line-height: 68px
+				color: $bath_accent
+				background: rgba(255,255,255,.7)
+				padding: 32px 15px
+				box-sizing: border-box
+				border-radius: 10px
+				margin: 0
+				&:before
+					display: none
+			h3
+				font-size: 25px
+				line-height: 31px
+				background: $bath_accent
+				border:
+					bottom-left-radius: 10px
+					bottom-right-radius: 10px
+				width: 896px
+				margin: 0 auto
+				span
+					font:
+						family: 'ArialBold', sans-serif
+						size: 27px
+					color: $accent2
+					line-height: 67px
+	.bath_benefit, .bath_sale, .bath_design, .bath_services, .bath_portfolio, .bath_price-key, .bath_pricing, .bath_work, .bath_stages, .bath_issues
+		padding-bottom: 55px
+		background: #fff
+		.wrap
+			display: flex
+			flex-direction: column
+			position: relative
+			.bath_benefit-content, .bath_design-content, .bath_services-content
+				display: flex
+				flex-direction: row
+				justify-content: space-between
+				align-items: center
+				flex-wrap: wrap
+				.item
+					width: 169px
+					display: flex
+					flex-direction: column
+					align-items: center
+					img
+						width: 80px
+						height: 80px
+						margin-bottom: 30px
+					p
+						text-align: center
+						font:
+							family: 'RalewayRegular', sans-serif
+							size: 16px
+						line-height: 22px
+						margin: 0
+	.bath_sale
+		//height: 583px
+		.wrap
+			.bath_sale-content
+				background: url("../img/img1.jpg") no-repeat center
+					size: cover
+				display: flex
+				flex-direction: row
+				justify-content: flex-end
+				.block-right
+					width: 50%
+					background: rgba(0,146,200,.8)
+					padding: 87px 30px 52px
+					box-sizing: border-box
+					display: flex
+					flex-direction: column
+					h3
+						background: transparent
+						font:
+							family: 'ArialBold', sans-serif
+							size: 35px
+						color: #fff
+						line-height: 45px
+						text-transform: uppercase
+						margin: 0 0 70px 0
+						padding: 0
+						span
+							color: $accent2
+					ul
+						list-style-type: none
+						margin: 0
+						padding: 0
+						li
+							position: relative
+							font:
+								size: 18px
+							line-height: 36px
+							padding-left: 50px
+							margin-bottom: 40px
+							color: #fff
+							&:before
+								content: ''
+								position: absolute
+								left: 0
+								background: url("../img/check.png") no-repeat
+								width: 36px
+								height: 36px
+					.toggle_block-hover
+						margin: 36px auto 0
+						background: $accent2
+						width: 309px
+						height: 43px
+						box-shadow: 0 3px 0 #000
+						border: none
+						text-transform: uppercase
+						font:
+							size: 18px
+							family: 'JuraMedium', sans-serif
+						cursor: pointer
+						outline: none
+						transition: .3s ease
+						&:hover
+							background: $accent
+							color: #fff
+	.bath_design
+		display: none
+		.wrap
+			.bath_design-content
+				display: flex
+				flex-direction: row
+				flex-wrap: wrap
+				justify-content: space-between
+				.item
+					display: flex
+					flex-direction: column
+					align-items: center
+					width: 378px
+					margin-bottom: 20px
+					img
+						cursor: pointer
+						border: 2px solid $title-accent
+							radius: 10px
+						width: 100%
+						height: auto
+	.bath_services
+		background: $bg
+		.wrap
+			.bath_services-content
+				.item
+					display: flex
+					flex-direction: column
+					align-items: center
+					width: 190px
+					margin-bottom: 40px
+					img
+						border-top: 3px solid $title-accent
+						border-radius: 5px
+						margin: 0
+					h3
+						text-transform: uppercase
+						font:
+							size: 16px
+							family: 'ArialBold', sans-serif
+						position: relative
+						margin: 13px 0
+						background: transparent
+						color: #000
+						padding: 0
+						&:before
+							content: ''
+							position: absolute
+							bottom: 0
+							width: 100%
+							height: 2px
+							background: linear-gradient(to right,#000 0,#000 50%,#1b4589 50%,#1b4589 100%)
+					p
+						font:
+							size: 15px
+						line-height: 18px
+						margin: 0
+						max-width: 150px
+					&:nth-child(3)
+						p
+							max-width: 170px
+	.bath_portfolio
+		.wrap
+			.bath_portfolio-content
+				display: flex
+				flex-direction: column
+				.tabs__caption
+					display: flex
+					flex-direction: row
+					justify-content: space-between
+					flex-wrap: wrap
+					list-style-type: none
+					margin-bottom: 65px
+					padding: 0
+					.active
+						background: $accent2
+					li
+						width: 256px
+						height: 74px
+						background: $bg
+						border:
+							top: 3px solid $title-accent
+							radius: 10px
+						text-transform: uppercase
+						display: flex
+						align-items: center
+						position: relative
+						cursor: pointer
+						&:before
+							content: ''
+							position: absolute
+							left: 10px
+							background: url("../img/bath1.png") no-repeat
+							width: 80px
+							height: 58px
+						&:nth-child(2)
+							&:before
+								background: url("../img/bath2.png") no-repeat
+								width: 68px
+						&:nth-child(3)
+							h4
+								padding: 0 0 0 95px
+							&:before
+								background: url("../img/bath3.png") no-repeat
+								width: 52px
+								height: 58px
+						&:nth-child(4)
+							h4
+								padding: 0 0 0 70px
+							&:before
+								background: url("../img/bath4.png") no-repeat
+								width: 30px
+								height: 58px
+						h4
+							font:
+								size: 18px
+								family: 'RalewayRegular', sans-serif
+							margin: 0
+							line-height: 22px
+							padding: 0 0 0 100px
+				.tabs__content
+					.tabs_carousel-slide
+						display: block
+						width: 100%
+						position: relative
+						.item
+							display: block
+							width: 100%
+							position: relative
+							.block_left
+								width: 380px
+								display: inline-block
+								vertical-align: top
+								.it
+									display: flex
+									flex-direction: column
+									position: relative
+									padding: 0 0 0 60px
+									margin-bottom: 50px
+									&:before
+										content: ''
+										position: absolute
+										left: 12px
+										top: 0
+										background: url("../img/addr.png") no-repeat
+										width: 34px
+										height: 28px
+									h6, p
+										color: $bath_accent
+										margin: 0
+									h6
+										font:
+											size: 22px
+											family: 'RalewayBlack', sans-serif
+										line-height: 24px
+									p
+										font:
+											size: 16px
+										span
+											vertical-align: super
+											font-size: 12px
+									&:nth-child(2)
+										&:before
+											background: url("../img/width.png") no-repeat
+											width: 35px
+											height: 25px
+									&:nth-child(3)
+										&:before
+											background: url("../img/time.png") no-repeat
+											width: 34px
+											height: 34px
+								.click_hover
+									color: $bath_accent
+									text-decoration: underline
+									font:
+										size: 18px
+										family: 'RalewayBold', sans-serif
+									line-height: 22px
+									background: transparent
+									border: none
+									outline: none
+									cursor: pointer
+								.services-list
+									display: none
+									flex-direction: column
+									margin-bottom: 40px
+									li
+										color: $bath_accent
+										font-size: 16px
+										line-height: 20px
+										margin-bottom: 5px
+							.block_img
+								display: inline-block
+								width: 780px
+								height: 520px
+								.gallery-portfolio
+									display: inline-block
+									cursor: pointer
+						.prev, .next
+							position: absolute
+							bottom: 0
+							font-size: 16px
+							padding: 0 10px
+							color: $title-accent
+							border: 2px solid	$title-accent
+							background: transparent
+							display: flex
+							align-items: center
+							justify-content: center
+							cursor: pointer
+							transition: .3s ease
+							z-index: 2
+							&:hover, &:focus
+								background: $title-accent
+								color: #fff
+						.prev
+							left: 180px
+						.next
+							left: 50px
+	.bath_price-key
+		background-color:  #f2f2f2
+		.wrap
+			.bath_price-content
+				display: flex
+				flex-direction: row
+				justify-content: space-between
+				flex-wrap: wrap
+				.item
+					width: 320px
+					display: flex
+					flex-direction: column
+					box-sizing: border-box
+					.title_subsection
+						background: #fff
+						position: relative
+						height: 74px
+						display: flex
+						align-items: center
+						border:
+							bottom: 2px solid $title-accent
+							top: 3px solid $title-accent
+							top-left-radius: 10px
+							top-right-radius: 10px
+						&:before
+							content: ''
+							position: absolute
+							left: 10px
+							background: url("../img/bath2.png") no-repeat
+							width: 68px
+							height: 58px
+						h3
+							background: transparent
+							text-transform: uppercase
+							font:
+								size: 18px
+								family: 'RalewayRegular', sans-serif
+							margin: 0
+							line-height: 22px
+							padding: 0 0 0 100px
+							color: #000
+							text-align: left
+					&:nth-child(2)
+						.title_subsection
+							h3
+								padding: 0 0 0 80px
+							&:before
+								background: url("../img/bath3.png") no-repeat
+								width: 52px
+								height: 58px
+					&:last-child
+						.title_subsection
+							h3
+								padding: 0 0 0 60px
+							&:before
+								background: url("../img/bath4.png") no-repeat
+								width: 30px
+								height: 58px
+					.title_price
+						display: flex
+						align-items: center
+						justify-content: center
+						background: transparent
+						height: 55px
+						h4
+							color: $title-accent
+							text-transform: uppercase
+							font:
+								size: 30px
+								family: 'ArialBold', sans-serif
+					.bath_list
+						background: #ffffff
+						border:
+							top: 2px solid $title-accent
+							bottom: 3px solid $title-accent
+							bottom-left-radius: 10px
+							bottom-right-radius: 10px
+						padding: 35px 0 20px
+						box-sizing: border-box
+						.bath_list-work
+							margin: 0
+							height: 430px
+							list-style-type: none
+							padding: 0 20px
+							border-bottom: 2px solid $title-accent
+							li
+								font:
+									size: 16px
+									family: 'ArialRegular', sans-serif
+								line-height: 22px
+								margin-bottom: 10px
+								position: relative
+								padding-left: 20px
+								&:before
+									content: '\f111'
+									position: absolute
+									color: #426397
+									font-family: 'fontawesome', sans-serif
+									font-size: 8px
+									left: 0
+								&:last-child
+									margin-bottom: 0
+						.included
+							text-align: left
+							line-height: 24px
+							font:
+								family: 'ArialBold', sans-serif
+								size: 18px
+							padding: 0 20px
+							color: #000
+							margin: 18px 0 10px 0
+						.bath_included
+							list-style: none
+							padding: 0 20px
+							margin: 0
+						button
+							display: flex
+							align-items: center
+							justify-content: center
+							color: #000
+							font:
+								size: 16px
+								family: 'ArialBold', sans-serif
+							text-transform: uppercase
+							width: 225px
+							height: 37px
+							margin: 27px auto 0
+							background-color: $accent2
+							border: none
+								radius: 10px
+							cursor: pointer
+							outline: none
+							transition: .3s ease
+							&:hover
+								background: $title-accent
+								color: #fff
+				&-bottom
+					.item
+						width: 100%
+						box-shadow: 0 0 14px 2px rgba(0,0,0,.4)
+						background: $button
+						border-radius: 10px
+						box-sizing: border-box
+						padding: 19px 57px 19px 40px
+						p
+							font:
+								family: 'ArialBold', sans-serif
+								size: 15px
+							line-height: 22.26px
+							text-align: center
+							margin: 0
+							padding: 0
+							span
+								color: $accent2
+	.bath_pricing
+		.wrap
+			.bath_pricing-content
+				display: flex
+				flex-direction: row
+				justify-content: space-between
+				flex-wrap: wrap
+				.item
+					display: flex
+					flex-direction: column
+					width: 553px
+					margin-bottom: 50px
+					h3
+						background: #f4f4f4
+						height: 59px
+						color: #000
+						font:
+							size: 24px
+							family: 'ArialBold', sans-serif
+						border:
+							radius: 10px
+							bottom: 3px solid $title-accent
+						margin: 0
+						padding: 0
+						display: flex
+						align-items: center
+						justify-content: center
+					.line
+						display: flex
+						flex-direction: row
+						justify-content: space-between
+						align-items: center
+						width: 100%
+						height: 45px
+						padding: 0 15px
+						box-sizing: border-box
+						p
+							font:
+								size: 18px
+							line-height: 20px
+							margin: 0
+							padding: 0
+							span
+								vertical-align: top
+								font-size: 12px
+						&:nth-child(odd)
+							background: rgba(0,126,200,.25)
+	.bath_work
+		background: #f2f2f2
+		.wrap
+			.bath_work-slide
+				width: 100%
+				display: flex
+				align-items: center
+				justify-content: center
+				position: relative
+				.item
+					display: flex
+					align-items: center
+					justify-content: center
+					width: 980px
+					a
+						text-align: center
+						margin: 0 auto
+						display: inline-block
+						cursor: pointer
+				.fa-arrow-right, .fa-arrow-left
+					position: absolute
+					font-size: 20px
+					color: $title-accent
+					width: 36px
+					height: 36px
+					border: 2px solid	$title-accent
+					background: transparent
+					display: flex
+					align-items: center
+					justify-content: center
+					cursor: pointer
+					transition: .3s ease
+					z-index: 2
+					&:hover, &:focus
+						background: $title-accent
+						color: #fff
+				.fa-arrow-right
+					right: 0
+				.fa-arrow-left
+					left: 0
+
+	.bath_stages
+		padding-bottom: 0
+		.wrap
+			.bath_stages-content
+				display: flex
+				flex-direction: row
+				justify-content: space-between
+				flex-wrap: wrap
+				.item
+					display: flex
+					flex-direction: column
+					align-items: center
+					width: 339px
+					margin-bottom: 50px
+					position: relative
+					img
+						width: 80px
+						height: 80px
+						margin-bottom: 23px
+					p
+						font:
+							size: 15px
+						text-align: center
+						span
+							text-decoration: underline
+							color: #0090cb
+						a
+							cursor: pointer
+							transition: .3s ease
+							&:hover
+								text-decoration: underline
+					&:nth-child(2), &:nth-child(5)
+						&:before, &:after
+							content: '\f054'
+							position: absolute
+							font-family: 'fontawesome', sans-serif
+							color: #00b9d3
+							font-size: 30px
+							top: 25%
+						&:before
+							left: -30px
+						&:after
+							right: -30px
+	.bath_issues
+		background: #f2f2f2
+		.wrap
+			.bath_issues-content
+				display: flex
+				flex-direction: column
+				.panel_heading
+					background: #fff
+					box-sizing: border-box
+					box-shadow: 0 0 5px 0 rgba(39,28,28,.3)
+					margin-bottom: 30px
+					&:last-child
+						margin-bottom: 0
+					.block_title
+						padding: 21px 30px
+						box-sizing: border-box
+						transition: .3s ease
+						cursor: pointer
+						position: relative
+						border-bottom: 3px solid $title-accent
+						&:before
+							content: '\f078'
+							position: absolute
+							font-size: 27px
+							font-family: 'fontawesome', sans-serif
+							right: 30px
+							cursor: pointer
+							color: $title-accent
+							transition: .3s ease
+						h3
+							margin: 0
+							padding: 0
+							text-align: left
+							font:
+								size: 24px
+								family: 'ArialBold', sans-serif
+							color: $title-accent
+							background: transparent
+					.block_hover
+						padding: 29px 50px 29px 30px
+						border-top: 1px solid rgba(54,62,77,.15)
+						color: #505050
+						display: none
+						p
+							font-size: 18px
+							margin: 0
+							padding: 0
+					.in
+						&:before
+							transform: rotate(180deg)
+.services_top-content
+	display: flex
+	flex-direction: column
+	flex-wrap: wrap
+	text-align: justify
+	margin-bottom: 45px
+
+.cd-tabs
+	h2
+		margin-bottom: 0
+	.single-slide
+		padding: 0 25px
+		.item
+			width: 220px
+			height: 150px
+			overflow: hidden
+			outline: none
+			padding: 0 8px
+		img
+			width: 100%
+			height: auto
+			margin: 0 auto
+		.slick-arrow
+			position: absolute
+			top: 25%
+			margin: 0 auto
+			z-index: 10
+		.fa-angle-left
+			float: left
+			left: 0
+		.fa-angle-right
+			float: right
+			right: 0
+		.fa
+			font-size: 60px
+			cursor: pointer
+			text-align: center
+			vertical-align: middle
+
+.cd-tabs-navigation
+	background: $button
+	list-style: none
+	margin: 0
+	padding: 10px
+	color: #ffffff
+	text-align: center
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-wrap: wrap
+	li
+		display: inline
+		margin-right: 10px
+		a
+			display: block
+			color: #fff
+			border-bottom: 2px dotted rgba(255, 255, 255, .8)
+			&:hover
+				border-bottom: 2px dotted transparent
+		.selected
+			text-decoration: none
+			border-bottom: 2px dotted transparent
+
+.profitable
+	display: flex
+	flex-direction: column
+	flex-wrap: wrap
+	background-color: $button
+	padding: 0 10px 20px 10px
+	.profitable-title
+		background-color: transparent
+		font-size: 22px
+		text-transform: uppercase
+		letter-spacing: 2px
+		text-decoration: underline
+		text-decoration-color: #FFF324
+		margin-bottom: 0
+	.profitable__block
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		padding: 0 70px
+		color: #fff
+		.list-profitable
+			display: flex
+			flex-direction: column
+			list-style: none
+			padding-left: 0
+			flex: 2
+			margin-right: 50px
+			li
+				margin: 10px 0
+				line-height: 20px
+				&:before
+					content: '-'
+					position: relative
+					margin-right: 5px
+		.cities
+			flex: 4
+			margin-left: 70px
+			p
+				word-spacing: 15px
+
+/*****Футер********/
+.footer
+	padding: 35px 15px 35px
+	font-family: $jura
+	font-size: 1.25rem
+	background-color: $accent
+	color: #5b5b5b
+	box-sizing: border-box
+	.footer__content
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		.footer__col
+			display: flex
+			flex-direction: column
+			.footer__mail
+				position: relative
+				margin-left: 40px
+				color: #fff
+				&:before
+					content: ''
+					background: url("../img/letter.png")
+					position: absolute
+					width: 30px
+					height: 21px
+					left: -40px
+					top: 8px
+				span
+					border-bottom: 3px dotted rgba(255, 255, 255, .5)
+					&:hover
+						border-bottom: 3px dotted transparent
+		.footer__col2
+			.bottom-menu
+				.bottom-menu__list
+					display: flex
+					flex-direction: row
+					list-style: none
+					flex-wrap: wrap
+					justify-content: flex-start
+					margin: 0
+					padding: 0
+					.bottom-menu__item
+						flex: 1 1 30%
+						display: flex
+						flex-direction: row
+						justify-content: flex-start
+						align-items: center
+						line-height: 30px
+						text-align: left
+						max-width: 175px
+						&:before
+							content: '-'
+							position: relative
+							margin-right: 5px
+							color: #ccc
+						.bottom-menu__link
+							position: relative
+							font-size: 1.0625rem
+							text-decoration: underline
+							white-space: pre
+							color: #ccc
+		.footer__col3
+			text-align: right
+			line-height: 28px
+			.footer__phone
+				color: #5b5b5b
+				font-size: 24px
+			.footer__contract
+				color: #666
+				padding-left: 26px
+				background: url("../img/png.png") no-repeat left
+				text-decoration: underline
+				font-family: Arial, sans-serif, Tahoma
+
+
+/* Модальное окно
+#modal_form
+	width: 300px
+	height: 300px
+	/* Рaзмеры дoлжны быть фиксирoвaны
+	border-radius: 5px
+	border: 3px #000 solid
+	background: #fff
+	position: fixed
+	/* чтoбы oкнo былo в видимoй зoне в любoм месте
+	top: 45%
+	/* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт
+	left: 50%
+	/* пoлoвинa экрaнa слевa
+	margin-top: -150px
+	margin-left: -150px
+	/* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =)
+	display: none
+	/* в oбычнoм сoстoянии oкнa не дoлжнo быть
+	opacity: 0
+	/* пoлнoстью прoзрaчнo для aнимирoвaния
+	z-index: 50
+	/* oкнo дoлжнo быть нaибoлее бoльшем слoе
+	padding: 20px 10px
+	#modal_close, #modal_close2
+		width: 30px
+		height: 30px
+		position: absolute
+		top: -15px
+		right: -16px
+		cursor: pointer
+		display: flex
+		align-items: center
+		justify-content: center
+		background: #fff
+		border-radius: 50%
+	.modal_form
+		text-align: center
+		h3
+			margin: 0 0 20px 0
+			font-size: 17px
+			line-height: 20px
+			background: none
+			color: #000
+		input
+			width: 100%
+			height: 40px
+			box-sizing: border-box
+			margin: 0 auto 13px
+			padding-left: 15px
+			font-size: 14px
+			color: #000
+			font-family: 'RalewayRegular', sans-serif
+			background: transparent
+			border-radius: 5px
+			border: 2px solid $accent
+			position: relative
+		*::-webkit-input-placeholder
+			color: #000
+		*:-moz-placeholder
+			color: #000
+		*::-moz-placeholder
+			color: #000
+		*:-ms-input-placeholder
+			color: #000
+		button
+			width: 270px
+			height: 50px
+			border-radius: 5px
+			font-size: 1em
+			color: $accent2
+			background-color: $accent
+			transition: all .5s ease
+			&:before
+				display: none
+			&:hover
+				background: $accent2
+				color: $accent
+
+
+/* Пoдлoжкa
+
+#overlay
+	z-index: 48
+	/* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa
+	position: fixed
+	/* всегдa перекрывaет весь сaйт
+	background-color: #000
+	/* чернaя
+	opacity: 0.8
+	/* нo немнoгo прoзрaчнa
+	-moz-opacity: 0.8
+	/* фикс прозрачности для старых браузеров
+	filter: alpha(opacity = 80)
+	width: 100%
+	height: 100%
+	/* рaзмерoм вo весь экрaн
+	top: 0
+	/* сверху и слевa 0, oбязaтельные свoйствa!
+	left: 0
+	cursor: pointer
+	display: none
+/* в oбычнoм сoстoянии её нет)
+
+
+//Табы
+.tabs__content
+	display: none /* по умолчанию прячем все блоки */
+	flex-direction: column
+	align-items: flex-start
+
+.tabs__content.active
+	display: flex /* по умолчанию показываем нужный блок */
+
+@import "media" // Всегда в конце

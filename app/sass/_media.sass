@@ -1,0 +1,501 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+
+  .footer .footer__content .footer__col3
+    font-size: 16px
+
+  .footer__copyright
+    font-size: 14px
+
+  .logo
+    order: -1
+    flex: 1 1 100%
+
+  p
+    padding: 0 10px
+
+  .footer .footer__content .footer__col3 .footer__contract
+    background-position: 35px
+
+  .wrap
+    padding: 0 10px
+    width: 100%
+
+  .content
+    .bath_benefit
+      .wrap
+        .bath_benefit-content
+          justify-content: space-around
+          .item
+            width: 190px
+            margin-bottom: 30px
+    .bath_services
+      .wrap
+        .bath_services-content
+          justify-content: space-around
+          .item
+            p
+              max-width: none
+            &:nth-child(3)
+              p
+                max-width: none
+
+    .bath_portfolio
+      .wrap
+        .bath_portfolio-content
+          .tabs__content
+            .tabs_carousel-slide
+              .item
+                .block_img
+                  width: 60%
+                  height: auto
+
+@media screen and (max-width: 1140px)
+  .content
+    .bath_main
+      .wrap
+        padding: 155px 30px 200px
+        h1
+          font-size: 40px
+          line-height: 50px
+        h3
+          width: 80%
+          font-size: 22px
+    .bath_portfolio
+      .wrap
+        .bath_portfolio-content
+          .tabs__caption
+            justify-content: space-around
+            margin-bottom: 20px
+            li
+              margin-bottom: 30px
+    .bath_pricing
+      .wrap
+        .bath_pricing-content
+          .item
+            width: 400px
+    .bath_stages
+      .wrap
+        .bath_stages-content
+          .item
+            width: 305px
+            &:nth-child(2), &:nth-child(5)
+              &:before
+                left: 0
+              &:after
+                right: 0
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+  .head
+    margin-bottom: 5px
+    .head__container
+      margin-top: 0
+      align-items: center
+      .logo
+        order: -2
+        .logo__link
+          font-size: 1.7rem
+          line-height: 40px
+      .head__right, .head__left
+        margin: 0
+        order: -1
+        .head__phone-container
+          align-items: center
+      .head__left
+        height: 85px
+        justify-content: space-between
+        .head__master-call
+          margin: 0 auto
+
+  .menu .wrap .menu__list
+    flex-direction: column
+    .menu__item
+      border: none !important
+      line-height: 20px
+      .menu__link
+        line-height: 20px
+        font-size: 18px
+
+  .footer .footer__content .footer__col3 .footer__phone
+    font-size: 20px
+
+  .footer .footer__content .footer__col3 .footer__contract
+    background-position: 10px
+
+  .content
+    .bath_main
+      .wrap
+        padding: 100px 30px 150px
+        h1
+          font-size: 36px
+          line-height: 46px
+        h3
+          width: 90%
+          font-size: 20px
+          padding: 10px 5px
+          box-sizing: border-box
+          line-height: 26px
+          span
+            font-size: 24px
+            line-height: 24px
+    .bath_portfolio
+      .wrap
+        .bath_portfolio-content
+          .tabs__content
+            .tabs_carousel-slide
+              .item
+                .block_left
+                  width: 100%
+                  min-height: 433px
+                  .click_hover
+                    font-size: 16px
+                .block_img
+                  width: 100%
+                  height: auto
+                  margin-bottom: 40px
+                  text-align: center
+    .bath_price-key
+      .wrap
+        .bath_price-content
+          justify-content: space-around
+          .item
+            margin-bottom: 30px
+
+@media only screen and (max-width : 940px)
+  .footer .footer__content
+    flex-wrap: wrap
+
+  .footer .footer__content .footer__col2 .bottom-menu .bottom-menu__list
+    flex-direction: column
+
+  .content
+    .bath_stages
+      .wrap
+        .bath_stages-content
+          justify-content: space-around
+          .item
+            &:nth-child(2), &:nth-child(5)
+              &:before, &:after
+                display: none
+
+@media screen and (max-width: 880px)
+  .content
+    .bath_sale
+      .wrap
+        .bath_sale-content
+          .block-right
+            width: 100%
+    .bath_design
+      .wrap
+        .bath_design-content
+          justify-content: space-around
+          .item
+            width: 280px
+
+@media screen and (max-width: 835px)
+  .content
+    .bath_pricing
+      .wrap
+        .bath_pricing-content
+          flex-direction: column
+          align-items: center
+          .item
+            width: 100%
+
+@media screen and (max-width: 810px)
+  .head .head__container
+    flex-direction: column
+    .head__right
+      order: -2
+      margin: 10px 0
+      .head__phone-container
+        a
+          font-size: 18px
+          line-height: 20px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+  p
+    text-align: left
+
+  .stages .stages__block
+    flex-direction: column
+
+  .cd-tabs
+    .single-slide
+      .item
+        height: 200px
+
+  .profitable .profitable__block
+    padding: 0 20px
+    .cities
+      margin-left: 20px
+      font-size: 14px
+
+  .profitable .profitable__block .list-profitable
+    margin-right: 20px
+    li
+      text-align: left
+      font-size: 14px
+
+  .bath_title
+    font-size: 26px
+    line-height: 40px
+    margin: 35px 0
+
+  .content
+    .bath_issues
+      .wrap
+        .bath_issues-content
+          .panel_heading
+            .block_title
+              &:before
+                font-size: 20px
+                right: 20px
+              h3
+                font-size: 20px
+                line-height: 24px
+                max-width: 92%
+            .block_hover
+              padding: 20px 40px
+              p
+                line-height: 24px
+
+@media screen and  (max-width: 675px)
+  .content
+    .bath_price-key
+      .wrap
+        .bath_price-content
+          flex-direction: column
+          align-items: center
+          .item
+            width: 300px
+            .bath_list
+              .bath_list-work
+                padding-bottom: 20px
+                height: auto
+
+@media screen and (max-width: 660px)
+  footer
+    padding: 20px 15px
+    .wrap
+      .footer__content
+        flex-direction: column
+        align-items: flex-start
+
+  .content
+    .bath_stages
+      .wrap
+        .bath_stages-content
+          flex-direction: column
+          align-items: center
+          .item
+            width: 100%
+            margin-bottom: 30px
+
+@media screen and (max-width: 620px)
+  .content
+    .bath_main
+      .wrap
+        h1
+          font-size: 30px
+          line-height: 40px
+        h3
+          font-size: 18px
+          padding: 10px
+          box-sizing: border-box
+          line-height: 22px
+          span
+            font-size: 20px
+            line-height: 20px
+    .bath_design
+      .wrap
+        .bath_design-content
+          flex-direction: column
+          align-items: center
+
+@media screen and (max-width: 550px)
+  .content
+    .bath_portfolio
+      .wrap
+        .bath_portfolio-content
+          .tabs__caption
+            flex-direction: column
+            align-items: center
+
+@media screen and (max-width: 510px)
+  .content
+    .bath_sale
+      .wrap
+        .bath_sale-content
+          .block-right
+            padding: 70px 20px 45px
+            h3
+              font-size: 26px
+              line-height: 40px
+              margin: 0 0 50px 0
+            ul
+              li
+                line-height: 28px
+                padding-left: 36px
+                &:before
+                  -webkit-background-size: contain
+                  background-size: contain
+                  width: 25px
+                  height: 25px
+            .toggle_block-hover
+              width: 260px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+  .logo .logo__link
+    font-size: 2.0rem
+
+  .head__right .head__phone-call
+    width: 80%
+    margin: auto
+
+  .head__right .head__phone-call p
+    max-width: none
+    width: 100%
+    margin-bottom: 7px
+
+  .head__right .head__phone-call input
+    margin: auto
+    margin-bottom: 10px
+    width: auto
+
+  .head__right .head__phone-call a
+    margin-bottom: 10px
+
+  .head__left
+    font-size: 12.5px
+
+  .head__left .head__master-call
+    padding: 0 10px 0 43px
+
+  .head__left .head__slogan
+    padding: 0 13px
+
+  .head__left .head__master-call:before
+    left: 9px
+
+  h2
+    padding: 7px 10px
+    line-height: 24px
+
+  .cd-tabs
+    .single-slide
+      .item
+        height: 160px
+
+  .profitable
+    .profitable__block
+      flex-direction: column
+      padding: 0
+      .list-profitable
+        margin-right: 0
+      .cities
+        margin-left: 0
+
+@media screen and (max-width: 410px)
+  .content
+    .bath_benefit
+      .wrap
+        .bath_benefit-content
+          flex-direction: column
+          align-items: center
+          .item
+            width: 100%
+    .bath_services
+      .wrap
+        .bath_services-content
+          flex-direction: column
+          align-items: center
+          .item
+            width: 100%
+    .bath_pricing
+      .wrap
+        .bath_pricing-content
+          .item
+            margin-bottom: 20px
+            h3
+              font-size: 20px
+              height: 45px
+            .line
+              p
+                font-size: 16px
+
+  .cd-tabs
+    .single-slide
+      padding: 0 15px
+      .slick-arrow
+        top: 15%
+        font-size: 40px
+
+@media only screen and (max-width : 370px)
+  .content
+    .bath_main
+      .wrap
+        padding: 100px 0
+        h1
+          font-size: 26px
+          line-height: 36px
+        h3
+          font-size: 16px
+          padding: 10px
+          box-sizing: border-box
+          line-height: 20px
+          span
+            font-size: 18px
+            line-height: 18px
+    .bath_portfolio
+      .wrap
+        .bath_portfolio-content
+          .tabs__content
+            .tabs_carousel-slide
+              .next
+                left: 20px
+              .prev
+                left: 150px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 340px)
+	.content
+    .door_partners
+      .wrap
+        .sheet
+          display: none
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
